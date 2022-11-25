@@ -1,5 +1,6 @@
 import { useState, memo, useCallback } from "react";
 import { ColoredMessage } from "./components/ColoredMessage";
+import { MuiButton } from "./components/MuiButton";
 
 export const App = memo(() => {
   const [num, setNum] = useState(0);
@@ -25,6 +26,7 @@ export const App = memo(() => {
       <button onClick={onClickButton}>ボタン</button>
       <button onClick={onClickReset}>リセット</button>
       <p>{num}</p>
+      <MuiButton />
     </>
   );
 });
